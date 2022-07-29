@@ -11,7 +11,7 @@ export function GifGrid({ category }) {
         <h3 key={category}> {category} </h3>
 
         {
-            !isLoading && (<h2> Cargando......</h2>)
+            isLoading == true && (<h2>Cargando......</h2>)
         }
 
         <div className="card-grid">
